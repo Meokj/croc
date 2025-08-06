@@ -1,6 +1,6 @@
 # Linux上安装自托管中继
 ```
-croc relay
+bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/install.sh)
 ```
 
 ---
