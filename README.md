@@ -1,11 +1,16 @@
-# Linux上安装自托管中继
+# Linux自托管中继
+* 安装
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/install.sh)
+```
+* 卸载
+```
+bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/uninstall.sh)
 ```
 
 ---
 
-# Windows上自托管中继使用
+# Windows使用
 * 首先切换到桌面
 ```
 cd $env:USERPROFILE\Desktop
