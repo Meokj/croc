@@ -71,7 +71,7 @@ EOF
 echo "重新加载 systemd 配置..."
 sudo systemctl daemon-reload
 
-echo "启动 croc relay 服务..."
+echo "启动 croc-relay 服务..."
 sudo systemctl start croc-relay
 
 echo "设置开机自启..."
