@@ -11,7 +11,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/uninstall.sh)
 ---
 
 # Windows使用
-* 安装croc
+* PowerShell安装croc命令
 ```
 winget install schollz.croc
 ```
