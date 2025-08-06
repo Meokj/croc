@@ -11,6 +11,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/uninstall.sh)
 ---
 
 # Windows使用
+* 安装croc
+```
+winget install schollz.croc
+```
 * 首先切换到桌面
 ```
 cd $env:USERPROFILE\Desktop
