@@ -19,9 +19,13 @@ winget install schollz.croc
 ```
 cd $env:USERPROFILE\Desktop
 ```
-* 发送命令
+* 发送命令(生成随机接收码)
 ```
 croc --relay relay.example.com:9009 send 文件路径
+```
+* 发送命令(自定义接收码)
+```
+croc --relay relay.example.com:9009 --code my-custom-code send 文件路径
 ```
 * 接收命令
 ```
