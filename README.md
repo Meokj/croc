@@ -1,10 +1,4 @@
 # Linux上安装自托管中继
-* 放行TCP端口9009，9010，9011，9012，9013
-* 安装命令
-```
-curl https://getcroc.schollz.com | bash
-```
-* 运行
 ```
 croc relay
 ```
