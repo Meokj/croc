@@ -1,4 +1,5 @@
 # Linux自托管中继服务
+* 默认中继密码`pass123`
 * 安装
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/install.sh)
