@@ -39,6 +39,20 @@ if [ ${#occupied_ports[@]} -ne 0 ]; then
   exit 1
 fi
 
+while true; do
+  read -p "请设置 croc-relay 中继密码: " PASSWORD
+
+  if [[ -z "$PASSWORD" ]]; then
+    echo "密码不能为空，请重新输入"
+  elif [[ "$PASSWORD" =~ [[:space:]] ]]; then
+    echo "密码不能包含空格，请重新输入"
+  elif [[ "$PASSWORD" =~ [\"\'\`\$\;\|] ]]; then
+    echo "密码不能包含特殊字符（\" ' \` \$ ; |），请重新输入"
+  else
+    break
+  fi
+done
+
 echo "将使用以下端口启动 croc relay: $PORTS，确保防火墙放行"
 
 echo "更新系统包列表..."
@@ -57,7 +71,7 @@ Description=Croc Relay Service
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/croc relay --ports $PORTS
+ExecStart=/usr/local/bin/croc relay --ports $PORTS --password $PASSWORD
 Restart=always
 User=root
 StandardOutput=syslog
