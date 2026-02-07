@@ -2,11 +2,11 @@
 * 默认中继密码`pass123`
 * 安装
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Meokj/croc/main/install.sh)
 ```
 * 卸载
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/co2f2e/croc/main/uninstall.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Meokj/croc/main/uninstall.sh)
 ```
 
 ---
